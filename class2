@@ -1,0 +1,32 @@
+class Cylinder
+{
+    public double radius;
+    public double height;
+    public double volume()
+    {
+        return Math.PI*radius*radius*height;
+    }
+    public double lidarea()
+    {
+        return Math.PI*radius*radius;
+    }
+    public double TSA()
+    {
+        return 2*lidarea()*circumference()*height;
+    }
+    public double circumference()
+    {
+        return 2*Math.PI*radius;
+    }
+}
+public class Main{
+    public static void main(String args[]) {
+      Cylinder c=new Cylinder();
+      c.radius=7;
+    c.height=10;
+      System.out.println("Lid Area:"+c.lidarea());
+       System.out.println("TSA:"+c.TSA());
+        System.out.println("volume:"+c.volume());
+         System.out.println("circumference:"+c.circumference());
+    }
+}
