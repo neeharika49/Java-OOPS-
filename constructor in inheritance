@@ -1,0 +1,29 @@
+class Parent
+{
+    public Parent()//constructor
+    {
+        System.out.println("parent Constructor");
+    }
+    
+}
+class Child extends Parent
+{
+    public Child()
+    {
+        System.out.println("child constructor");
+    }
+}
+class Grandchild extends Child
+{
+    public Grandchild()
+    {
+        System.out.println("Grandchild constructor");
+    }
+}
+public class MyClass {
+    public static void main(String args[]) {
+      Grandchild g=new Grandchild();
+
+      
+    }
+}
