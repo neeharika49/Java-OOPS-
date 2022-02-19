@@ -1,0 +1,44 @@
+class Rectangle
+{
+    private double length;
+    private double breadth;
+    
+    public Rectangle()
+    {
+        length=1;
+        breadth=1;
+    }
+    public void setLength(double l)
+    {  if(l>0)
+        length=l;
+        else
+        length=0;
+    }
+    public void setBreadth(double b)
+    {  if(b>0)
+        breadth=b;
+        else
+        breadth=0;
+    }
+    public Rectangle(double l,double b)
+    {
+        setLength(l);
+        setBreadth(b);
+    }
+    public Rectangle(double s)
+    {
+        length=breadth=s;
+    }
+    public double area()
+    {
+        return length*breadth;
+    }
+}
+
+
+public class Main {
+    public static void main(String args[]) {
+      Rectangle r=new Rectangle(2,5);
+      System.out.println(r.area());
+    }
+}
